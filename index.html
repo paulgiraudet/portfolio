@@ -15,6 +15,8 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
+  <!-- fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet">
 </head>
 
 <body>
@@ -30,19 +32,21 @@
   				<span></span>
   				<span></span>
   				<ul class="menu">
-  					<li><a href="#home"><i class="fas fa-home fa-2x"></i></a></li>
-  					<li><a href="#"><i class="fas fa-book fa-2x"></i></a></li>
-  					<li><a href="#"><i class="fas fa-user fa-2x"></i></a></li>
-  					<li><a href="#"><i class="fas fa-at fa-2x"></i></a></li>
+  					<li><a href="#home"><i class="fas fa-home fa-1x"></i></a></li>
+  					<li><a href="#realization"><i class="fas fa-book fa-1x"></i></a></li>
+  					<li><a href="#about"><i class="fas fa-user fa-1x"></i></a></li>
+  					<li><a href="#contact"><i class="fas fa-at fa-1x"></i></a></li>
   				</ul>
   			</div>
   		</nav>
     </header>
 
     <!-- welcome centered 100vh-->
-    <div class="myself">
-      <h1>Hello<span class="dot">.</span> My name is Paul GIRAUDET</h1>
-      <h2>I'm a Web Developper</h2>
+    <div class="container_myself">
+      <div class="myself">
+        <h1>Hello<span class="dot">.</span> Je m'appelle Paul GIRAUDET</h1>
+        <h2>Je suis Developpeur Web Junior</h2>
+      </div>
     </div>
 
   </div>
@@ -50,60 +54,117 @@
 
   <div id="realization">
 
-    <div class="title_project">
+    <!-- <div class="title_project">
       <p class="title">Mes Projets</p>
-    </div>
+    </div> -->
+
 
     <div class="main_project">
 
-      <div class="container-fluid">
-        <div class="row">
+      <h3><span>Mes Projets</span></h3>
 
-          <!-- three main project -->
-          <div class="col-md-4 col-sm-12 first_project">
-            <img src="img/projet_1.jpeg" alt="first project">
-            <a href="#"><p class="more_info">Aller au site</p></a>
+      <div class="container-fluid">
+
+        <!-- three main project -->
+
+        <div class="row third_project_row">
+
+          <div class="col-md-6 col-sm-12 third_project">
+            <img src="img/vtatoo2.png" alt="third project">
           </div>
-          <div class="col-md-4 col-sm-12 second_project">
-            <img src="img/projet_2.jpeg" alt="first project">
-            <a href="#"><p class="more_info">Aller au site</p></a>
-          </div>
-          <div class="col-md-4 col-sm-12 third_project">
-            <img src="img/projet_3.jpeg" alt="first project">
-            <a href="#"><p class="more_info">Aller au site</p></a>
+
+          <div class="col-md-6 col-sm-12 second_project_description">
+            <p class="more_info">Création d'un site de Tatouage en collaboration</p>
+            <a href="#" class="repo_site">Voir le Repo</a>
           </div>
 
         </div>
-        <!-- end of row -->
+        <!-- end of third project row -->
+
+        <hr>
+
+        <div class="row first_project_row">
+
+          <div class="col-md-6 col-sm-12 first_project">
+            <img src="img/archi2.png" alt="first project">
+          </div>
+
+          <div class="col-md-6 col-sm-12 first_project_description">
+            <p class="more_info">Reproduction du site Archiduchesse</p>
+            <a href="#" class="repo_site">Voir le Repo</a>
+          </div>
+
+        </div>
+        <!-- end of first_projet_row -->
+
+        <hr>
+
+        <div class="row second_project_row">
+
+          <div class="col-md-6 col-sm-12 second_project">
+            <img src="img/lbc2.png" alt="second project">
+          </div>
+
+          <div class="col-md-6 col-sm-12 second_project_description">
+            <p class="more_info">Reproduction du site Leboncoin</p>
+            <a href="#" class="repo_site">Voir le Repo</a>
+          </div>
+
+        </div>
+        <!-- end of second row -->
+
       </div>
       <!-- end of container fluid -->
 
     </div>
     <!-- end of main_project -->
 
+    <div class="container_more_project">
+
+      <div class="title_project_more">
+        <p class="title">Et bientôt d'autres ...</p>
+        <input type="checkbox"/>
+        <i class="fas fa-plus fa-1x"></i>
+
+        <!-- adding more project here -->
+        <div class="col-md-12 more_project"></div>
+
+      </div>
+
+    </div>
+    <!-- end of container_more_project -->
+
   </div>
   <!-- end of realization -->
 
+  <!-- <hr> -->
+
   <div id="about">
 
-    <div class="container-fluid">
+    <div class="container-fluid container_about">
       <div class="row">
-
-        <div class="col-md-8 col-sm-12 description_about">
-          <p class="title">Parlons peu</p>
+        <div class="col-md-2 col-sm-0"></div>
+        <div class="col-md-4 col-sm-12 description_about">
+          <!-- <div class="title_about">
+            <p class="title">Parlons peu</p>
+          </div> -->
+          <h3><span>Parlons Peu</span></h3>
           <img src="img/photo_profil.jpg" alt="photo de Paul GIRAUDET">
           <p class="about">Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années 1500, quand un imprimeur anonyme assembla ensemble des morceaux de texte pour réaliser un livre spécimen de polices de texte. Il n'a pas fait que survivre cinq siècles, mais s'est aussi adapté à la bureautique informatique, sans que son contenu n'en soit modifié. Il a été popularisé dans les années 1960 grâce à la vente de feuilles Letraset contenant des passages du Lorem Ipsum, et, plus récemment, par son inclusion dans des applications de mise en page de texte, comme Aldus PageMaker.</p>
 
         </div>
 
-        <div class="col-md-8 col-sm-12 container_icon_about">
-          <p class="title">Hobbies</p>
-          <div class="col-xs-6 icon_about"><i class="fas fa-user-friends fa-5x"></i></div>
-          <div class="col-xs-6 icon_about"><i class="fas fa-futbol fa-5x"></i></div>
-          <div class="col-xs-6 icon_about"><i class="fas fa-gamepad fa-5x"></i></div>
-          <div class="col-xs-6 icon_about"><i class="fas fa-headphones fa-5x"></i></div>
-          <div class="col-xs-6 icon_about"><i class="fas fa-film fa-5x"></i></div>
-          <div class="col-xs-6 icon_about"><i class="fas fa-camera-retro fa-5x"></i></div>
+        <div class="col-md-4 col-sm-12 container_icon_about">
+          <!-- <div class="title_about">
+            <p class="title">Hobbies</p>
+          </div> -->
+          <h3><span>Hobbies</span></h3>
+          <div class="col-md-6 col-sm-4 col-xs-6 icon_about"><i class="fas fa-user-friends fa-5x"></i></div>
+          <div class="col-md-6 col-sm-4 col-xs-6 icon_about"><i class="fas fa-futbol fa-5x"></i></div>
+          <div class="col-md-6 col-sm-4 col-xs-6 icon_about"><i class="fas fa-gamepad fa-5x"></i></div>
+          <div class="col-md-6 col-sm-4 col-xs-6 icon_about"><i class="fas fa-headphones fa-5x"></i></div>
+          <div class="col-md-6 col-sm-4 col-xs-6 icon_about"><i class="fas fa-film fa-5x"></i></div>
+          <div class="col-md-6 col-sm-4 col-xs-6 icon_about"><i class="fas fa-camera-retro fa-5x"></i></div>
 
         </div>
       </div>
@@ -113,38 +174,40 @@
 
   </div>
   <!-- end of div about -->
+  <!-- <hr> -->
 
   <div id="contact">
 
     <div class="form_contact">
 
 			<form class="contact_form">
-				<div class="contact_form_title">
-					<p>Contact Us</p>
-				</div>
+				<!-- <div class="contact_form_title">
+					<p>Contactez Moi</p>
+				</div> -->
+        <h3><span>Contactez-moi</span></h3>
 
 				<div class="form_contact_input contact_input100">
-					<label for="input1" class="label_input">Your Name</label>
-					<input class="input100" id="input1" name="name" placeholder="Enter your name" type="text">
+					<label for="input1" class="label_input">Votre Nom</label>
+					<input class="input100" id="input1" name="name" placeholder="Entrer votre nom" type="text">
 					<div class="focus_input"></div>
 				</div>
 
 				<div class="form_contact_input contact_input100">
 					<label for="input2" class="label_input">Email</label>
-					<input class="input100" id="input2" name="email" placeholder="Enter your email addess" type="text">
+					<input class="input100" id="input2" name="email" placeholder="Entrer votre Email" type="text">
 					<div class="focus_input"></div>
 				</div>
 
 				<div class="form_contact_input">
           <label for="text1" class="label_input">Message</label>
-					<textarea class="input100" id="text1" name="message" placeholder="Your message here..."></textarea>
+					<textarea class="input100" id="text1" name="message" placeholder="Votre message..."></textarea>
           <div class="focus_input"></div>
 				</div>
 
 				<div class="container_contact_button">
 					<button class="contact_button">
 						<span>
-							Submit
+							Envoyer
 							<i class="fas fa-share-square"></i>
 						</span>
 					</button>
