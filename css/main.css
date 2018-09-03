@@ -427,6 +427,10 @@ h3{
 
 .description_about img{
   float:left;
+  height:200px;
+  margin:0 10px 5px 10px;
+  border:2px solid #2ecc71;
+  border-radius:10px;
 }
 
 .about{
