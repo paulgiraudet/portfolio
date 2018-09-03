@@ -406,63 +406,71 @@ h3{
    About
    ========================================================================== */
 
-#about{
-  padding:35px 0;
-  background-color:rgba(46, 204, 113, 0.5);
-  transform: skewY(-3deg);
-}
-.container_about{
-  padding:30px;
-  background-color:rgba(46, 204, 113, 1);
-  transform: skewY(6deg);
-  color:white;
-}
+   #about{
+    padding:35px 0;
+    background-color:rgba(46, 204, 113, 0.5);
+    transform: skewY(-3deg);
+   }
+   .container_about{
+    padding:30px 30px 70px;
+    background-color:rgba(46, 204, 113, 1);
+    transform: skewY(6deg);
+    color:white;
+   }
 
-.antiScrew{
-  transform: skewY(-3deg);
-}
+   .antiScrew{
+    transform: skewY(-3deg);
+   }
 
-.container_about h3 span{
-  position:relative;
-  top:17px;
-  background:#2ecc71;
-  padding:0 35px;
-  color:white;
-  font-size:28px;
-}
+   .container_about h3 span{
+    position:relative;
+    top:17px;
+    background:#2ecc71;
+    padding:0 35px;
+    color:white;
+    font-size:28px;
+   }
 
-.title_about{
-  width:100%;
-  height:100px;
-  margin-top:20px;
-  border:3px solid #2ecc71;
-  font-size: 39px;
-  color: #333333;
-  text-align: center;
-  line-height: 2.3;
-}
+   .title_about{
+    width:100%;
+    height:100px;
+    margin-top:20px;
+    border:3px solid #2ecc71;
+    font-size: 39px;
+    color: #333333;
+    text-align: center;
+    line-height: 2.3;
+   }
 
-.description_about img{
-  float:left;
-}
+   .description_about img{
+     float:left;
+     height:200px;
+     margin:7px 15px 0 10px;
+     border:2px solid black;
+     border-radius:10px;
+   }
 
-.about{
-  line-height:1.5;
-  font-size:20px;
-  padding-bottom:30px;
-}
+   .about{
+     line-height:1.5;
+     font-size:17px;
+   }
 
-.icon_about{
-  display:flex;
-  justify-content:center;
-  align-items: center;
-  flex-direction: column;
-  height:150px;
-  cursor:pointer;
-}
-.icon_about:hover{
-  animation: bounce 0.35s ease infinite alternate;
-}
+   .importantText{
+     font-weight:bold;
+     color:rgba(0,0,0,0.8);
+   }
+
+   .importantText a{
+     color:rgba(0,0,0,0.8);
+   }
+
+   .icon_about{
+     display:flex;
+     justify-content:center;
+     align-items: center;
+     flex-direction: column;
+     height:150px;
+   }
 
 /* ==========================================================================
    form
@@ -809,11 +817,6 @@ footer i:hover{
     left:-30px;
   }
 
-}
-
-@keyframes bounce{
-     from {top: 0px;}
-     to   {top: -20px;}
 }
 
 @media print,
