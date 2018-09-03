@@ -452,11 +452,11 @@ h3{
 
 .importantText{
   font-weight:bold;
-  color:rgba(0,0,0,0.8);
+  color:black;
 }
 
 .importantText a{
-  color:rgba(0,0,0,0.8);
+  color:black;
 }
 
 .icon_about{
