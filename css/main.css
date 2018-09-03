@@ -113,9 +113,8 @@ body{
 #home{
   width:100%;
   height:100vh;
-  background-image: url("../img/background3.jpeg");
+  background-image: url("../img/background2.jpg");
   background-size:cover;
-  background-color:#2ecc71;
   display:flex;
   justify-content: center;
   align-items: center;
@@ -156,14 +155,12 @@ header img{
 	height:4px;
   margin:2px 0 5px 7px;
 	position:relative;
-	background:rgb(220,220,220);
+	background:black;
 	border-radius:3px;
 	z-index:1;
 	transform-origin:4px 0px;
 	transition:transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0), background 0.5s cubic-bezier(0.77,0.2,0.05,1.0), opacity 0.55s ease;
 }
-
-
 
 .menuToggle span:first-child{
 	transform-origin:0% 0%;
@@ -231,15 +228,16 @@ header img{
 }
 
 .myself{
+  background-color:rgba(255,255,255,0.5);
+  border:3px solid #2ecc71;
   text-align: center;
   height:auto;
   padding:0 15px 45px 15px;
-  color:white;
 }
 
 .myself h1, .myself h2{
-  font-family: 'Bad Script', cursive;
-  font-size: 60px;
+  font-family: 'Comfortaa', cursive;
+  font-size: 40px;
 }
 
 /* ==========================================================================
@@ -253,8 +251,6 @@ header img{
   margin: auto;
   padding-bottom:40px;
 }
-
-
 
 h3{
   border-bottom:1px solid lightgrey;
@@ -295,14 +291,8 @@ h3{
 }
 
 .main_project .more_info{
-  font-size:28px;
+  font-size:22px;
   padding:0 10px 10px 0;
-  font-weight:bold;
-  font-family: 'Amatic SC', cursive;
-}
-
-.projectDetails{
-  opacity:0.7;
 }
 
 .repo_site{
@@ -365,6 +355,10 @@ h3{
   font-family: 'Comfortaa', cursive;
 }
 
+/* .title{
+  font-size:28px;
+} */
+
 .title_project_more i{
   position:relative;
   left:0px;
@@ -407,53 +401,62 @@ h3{
    ========================================================================== */
 
 #about{
-  padding:35px 0;
-  background-color:rgba(46, 204, 113, 0.5);
-  transform: skewY(-3deg);
+ padding:35px 0;
+ background-color:rgba(46, 204, 113, 0.5);
+ transform: skewY(-3deg);
 }
 .container_about{
-  padding:30px;
-  background-color:rgba(46, 204, 113, 1);
-  transform: skewY(6deg);
-  color:white;
+ padding:30px 30px 70px;
+ background-color:rgba(46, 204, 113, 1);
+ transform: skewY(6deg);
+ color:white;
 }
 
 .antiScrew{
-  transform: skewY(-3deg);
+ transform: skewY(-3deg);
 }
 
 .container_about h3 span{
-  position:relative;
-  top:17px;
-  background:#2ecc71;
-  padding:0 35px;
-  color:white;
-  font-size:28px;
+ position:relative;
+ top:17px;
+ background:#2ecc71;
+ padding:0 35px;
+ color:white;
+ font-size:28px;
 }
 
 .title_about{
-  width:100%;
-  height:100px;
-  margin-top:20px;
-  border:3px solid #2ecc71;
-  font-size: 39px;
-  color: #333333;
-  text-align: center;
-  line-height: 2.3;
+ width:100%;
+ height:100px;
+ margin-top:20px;
+ border:3px solid #2ecc71;
+ font-size: 39px;
+ color: #333333;
+ text-align: center;
+ line-height: 2.3;
 }
 
 .description_about img{
   float:left;
   height:200px;
-  margin:0 10px 5px 10px;
-  border:2px solid #2ecc71;
+  margin:7px 15px 0 10px;
+  border:2px solid black;
   border-radius:10px;
 }
 
 .about{
   line-height:1.5;
-  font-size:20px;
-  padding-bottom:30px;
+  font-size:17px;
+  /* text-align: justify; */
+}
+
+.importantText{
+  font-weight:bold;
+  color:black;
+}
+
+.importantText a{
+  color:black;
 }
 
 .icon_about{
@@ -462,10 +465,6 @@ h3{
   align-items: center;
   flex-direction: column;
   height:150px;
-  cursor:pointer;
-}
-.icon_about:hover{
-  animation: bounce 0.35s ease infinite alternate;
 }
 
 /* ==========================================================================
@@ -647,6 +646,9 @@ footer{
   width:100%;
   height:80px;
   background-color:black;
+  /* display:flex;
+  justify-content: center;
+  align-items:center; */
 }
 
 footer ul{
@@ -813,11 +815,6 @@ footer i:hover{
     left:-30px;
   }
 
-}
-
-@keyframes bounce{
-     from {top: 0px;}
-     to   {top: -20px;}
 }
 
 @media print,
